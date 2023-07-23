@@ -10,7 +10,7 @@ const User = g.model('User', {
   projects: g.relation(() => Project).list(),
 })
 
-const Project = g.model('project', {
+const Project = g.model('Project', {
   title: g.string().length({min: 2}),
   description: g.string(),
   image: g.url(),
